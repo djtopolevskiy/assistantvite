@@ -1,0 +1,88 @@
+.spoilers 
+  h1 Basic
+
+  .spoiler.spoiler-default.spoiler-state-collapsed(data-toggle-text="Spoiler")
+    .spoiler-content Test content 1.
+    
+  h1 Default Expanded
+
+  .spoiler.spoiler-default.spoiler-state-expanded(data-toggle-text="Spoiler")
+    .spoiler-content Test content 2.
+    
+  h1 Toggle Text Open/Close
+
+  .spoiler.spoiler-default.spoiler-state-collapsed(data-toggle-text="Open Spoiler | Close Spoiler")
+    .spoiler-content Test content 3.
+    
+
+  .spoiler.spoiler-default.spoiler-state-collapsed(data-toggle-text="Segment 1&nbsp;|&nbsp;Segment 2&nbsp;|&nbsp;Segment 3 | Close")
+    .spoiler-content Test content 4.
+  
+  h1 Toggle Placement
+  
+  .spoiler.spoiler-default.spoiler-state-collapsed(data-toggle-text="Bottom" data-toggle-placement="bottom")
+    .spoiler-content Test content 5
+  
+  .spoiler.spoiler-default.spoiler-state-collapsed(data-toggle-text="Top" data-toggle-placement="top")
+    .spoiler-content Test content 6.
+  
+  h1 Custom Classes
+
+  .spoiler.spoiler-default.spoiler-state-collapsed(data-toggle-text="Default")
+    .spoiler-content Test content 7.
+  
+  .spoiler.spoiler-primary.spoiler-state-collapsed(data-toggle-text="Primary")
+    .spoiler-content Test content 8.
+  
+
+  .spoiler.spoiler-success.spoiler-state-collapsed(data-toggle-text="Success")
+    .spoiler-content Test content 9.
+  
+  .spoiler.spoiler-info.spoiler-state-collapsed(data-toggle-text="Info")
+    .spoiler-content Test content 10.
+  
+  .spoiler.spoiler-warning.spoiler-state-collapsed(data-toggle-text="Warning")
+    .spoiler-content Test content 11.
+
+  .spoiler.spoiler-danger.spoiler-state-collapsed(data-toggle-text="Danger")
+    .spoiler-content Test content 12.
+
+  h1 Custom ID
+
+  .spoiler.spoiler-default.spoiler-state-collapsed(data-toggle-text="Spoiler" id="my-custom-id")
+    .spoiler-content Test content 21.
+
+  h1 Accordion
+
+  .spoiler.spoiler-success.spoiler-state-expanded(data-toggle-text="Panel 1" data-connection="A")
+    .spoiler-content Test content 13.
+
+  .spoiler.spoiler-success.spoiler-state-collapsed(data-toggle-text="Panel 2" data-connection="A")
+    .spoiler-content Test content 14.
+
+  .spoiler.spoiler-success.spoiler-state-collapsed(data-toggle-text="Panel 3" data-connection="A")
+    .spoiler-content Test content 15.
+
+  .spoiler.spoiler-danger.spoiler-state-collapsed(data-toggle-text="Panel 1" data-connection="B")
+    .spoiler-content Test content 16.
+
+  .spoiler.spoiler-danger.spoiler-state-collapsed(data-toggle-text="Panel 2" data-connection="B")
+    .spoiler-content Test content 17.
+
+  .spoiler.spoiler-danger.spoiler-state-collapsed(data-toggle-text="Panel 3" data-connection="B")
+    .spoiler-content Test content 18.
+
+  h1 Disabled
+
+  .spoiler.spoiler-default.spoiler-state-collapsed.spoiler-state-disabled(data-toggle-text="Spoiler")
+    .spoiler-content Test content 19.
+  
+  .spoiler.spoiler-default.spoiler-state-expanded.spoiler-state-disabled(data-toggle-text="Spoiler")
+    .spoiler-content Test content 20.
+  <div class="spoiler spoiler-default spoiler-state-expanded spoiler-state-disabled" data-toggle-text="Spoiler">
+    <div class="spoiler-content">Test content 20.</div>
+  </div> 
+
+  <div class="spoiler spoiler-danger spoiler-state-collapsed" data-toggle-text="Panel 3" data-connection="B">
+    <div class="spoiler-content">Test content 18.</div>
+  </div>

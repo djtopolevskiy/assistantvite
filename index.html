@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<template data-type="pug" data-src="./src/include/head.pug"></template>
+	<title>Assistant</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script>
+		document.documentElement.className += ' spoiler-js'
+	</script>
+	<body>
+		<div class="wrapper">
+			<template data-type="pug" data-src="./src/include/header.pug"></template>
+			<template data-type="pug" data-src="./src/include/mainboard.pug"></template>
+			<div class="page">
+				<template data-type="pug" data-src="./src/include/background.pug"></template>
+				<template data-type="pug" data-src="./src/include/main.pug"></template>
+			</div>
+			<template data-type="pug" data-src="./src/include/footer.pug"></template>
+		</div>
+		<template data-type="pug" data-src="./src/include/popupExample.pug"></template>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- <script type="module" src="./src/js/app.js"></script> -->
+		<template type="module" data-type="pug" data-src="/src/include/script.pug"></template>
+	</body>
+</html>

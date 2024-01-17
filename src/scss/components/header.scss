@@ -1,0 +1,127 @@
+.header {
+  position: absolute;
+  // position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 2;
+  height: $headerHeight + 20 + px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 rem(10);
+  gap: 0 10px;
+  border-bottom: rem(2) solid var(--primary-hover-color);
+  z-index: 2;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  z-index: 5;
+
+  img {
+    max-width: $headerHeight + px;
+    padding: rem(10) rem(10);
+  }
+  span {
+    font-family: "Cormorant Garamond";
+    font-size: rem(40);
+    color: var(--primary-hover-color);
+  }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: "Cormorant Garamond";
+  font-size: rem(40);
+  justify-content: flex-end;
+}
+
+.menu__list {
+  justify-content: space-between;
+  width: 80%;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__link {
+  color: var(--primary-hover-color);
+  font-family: "Cormorant Garamond";
+}
+
+.menu__link:hover {
+  color: #d7d7d7;
+}
+
+.menu-sub__list {
+  position: absolute;
+  background: #161d27;
+  top: 100%;
+  right: 0;
+  padding: rem(10) rem(10);
+  white-space: nowrap;
+  // border-radius: rem(15);
+  // min-width: rem(130);
+}
+
+.menu-sub__item {
+  margin: rem(0) rem(0) rem(20) rem(0);
+  background-color: #161d27;
+}
+
+.menu-sub__item:last-child {
+  margin-bottom: 0;
+}
+
+.menu-sub__link {
+  display: flex;
+  flex-wrap: nowrap;
+  color: var(--primary-hover-color);
+  font-family: "Cormorant Garamond";
+}
+
+.menu-sub__link:hover {
+  color: #d7d7d7;
+  // font-weight: bold;
+}
+
+.header__burger .icon-menu {
+  display: none;
+}
+// ----touch -------------------------
+body._touch .menu__list > li {
+  display: flex;
+  align-items: center;
+}
+
+body._touch .menu__list {
+  flex: 1 1 auto;
+}
+
+body._touch .menu__arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: rem(5);
+  transition: transform 0.3s ease 0s;
+  border-left: rem(5) solid transparent;
+  border-right: rem(5) solid transparent;
+  border-top: rem(10) solid #fff;
+}
+
+body._touch .menu__list > li._active .menu__arrow {
+  transform: rotate(-180deg);
+}
+// ---------final pc-----------------

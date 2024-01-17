@@ -1,0 +1,41 @@
+.footer {
+  // padding: rem(20) 0;
+  // background: var(--black-color);
+  height: rem(150);
+  background-image: url("/src/assets/images/footer.png");
+  background-position: center;
+  background-size: cover;
+
+  // .footer__container
+  &__container {
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    @include media-mx(510) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+// .footer__nav {
+//   width: 100%;
+// }
+
+// .footer__list {
+//   display: flex;
+//   width: 100%;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+// }
+
+// .footer__link {
+//   font-family: "Cormorant Garamond";
+//   font-size: rem(40);
+//   color: var(--primary-hover-color);
+// }
+
+// .footer__logo {
+//   max-width: rem(60);
+// }

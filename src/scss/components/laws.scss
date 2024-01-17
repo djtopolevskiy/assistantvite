@@ -1,0 +1,71 @@
+.laws {
+  background-color: #1f2732;
+}
+
+.laws__container {
+  padding: rem(30) rem(15);
+  height: auto;
+}
+
+.laws__general {
+  display: flex;
+}
+
+.laws__img-block {
+  // display: flex;
+  width: 100%;
+  align-items: flex-start;
+  height: 900px;
+  @include media-mx(767) {
+    display: none;
+  }
+}
+
+.laws__img {
+  object-fit: cover;
+  width: 100%;
+  height: 900px;
+}
+
+.laws__nav {
+  margin-left: rem(15);
+  @include media-mx(767) {
+    margin-right: rem(15);
+  }
+}
+
+.laws__title {
+  color: #d7d7d7;
+  font-family: "Cormorant Garamond";
+  font-size: clamp(rem(25), 5vw, rem(60));
+  font-style: normal;
+  font-weight: 400;
+  // line-height: 1.3; /* 130% */
+  letter-spacing: 0.4px;
+}
+
+.laws__logo {
+  width: clamp(rem(75), 5.42vw, rem(120));
+  margin: rem(15) 0;
+}
+
+.laws__item {
+  margin-bottom: rem(15);
+  height: auto;
+}
+
+.laws__item:last-child {
+  margin-bottom: rem(0);
+}
+
+.laws__btn {
+  display: block;
+  width: 100%;
+  padding: rem(5);
+
+  border: 1px solid #d1b06b;
+  background: #161d27;
+  color: #d7d7d7;
+  font-family: "Cormorant Garamond";
+  font-size: clamp(rem(25), 2.91vw, rem(35));
+}

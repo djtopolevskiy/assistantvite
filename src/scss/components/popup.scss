@@ -1,0 +1,161 @@
+.popup {
+  // $white-100: #fff;
+
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  overflow-y: auto;
+  pointer-events: none;
+
+  /** Установить свои значения */
+  // padding: rem(30) rem(10);
+  background-color: rgba(#1f2732, 1);
+  z-index: 2000;
+  transition: opacity 0.4s ease-in-out;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    // margin-bottom: rem(150);
+
+    .popup__content {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  // .popup__wrapper
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  // .popup__content
+  &__content {
+    position: relative;
+    margin: 0 auto;
+
+    /** Установить свои значения */
+    // padding: rem(30) rem(10);
+    width: 100%;
+    height: 100%;
+    background-color: #1f2732;
+    transform: translateY(rem(-200));
+    opacity: 0;
+    transition: transform 0.2s ease-in-out;
+    // opacity 0.2s ease-in-out;
+  }
+
+  // .popup__close
+  &__close {
+    /** Установить свои значения */
+    // bottom: rem(50);
+    margin: rem(30) auto;
+    display: block;
+    width: auto;
+    padding: rem(20);
+
+    border: 1px solid #d1b06b;
+    background: #1f2732;
+    color: #d7d7d7;
+    font-family: "Cormorant Garamond";
+    font-size: rem(35);
+  }
+}
+
+.popup__btn {
+  margin: rem(5) rem(15);
+  padding: rem(5) rem(5);
+
+  width: 100%;
+  background: #1f2732;
+  border: 1px solid #d1b06b;
+  color: #d7d7d7;
+  font-family: "Cormorant Garamond";
+  font-size: clamp(rem(30), 5vw, rem(35));
+}
+
+.popup__body {
+  display: block;
+  margin: rem(30) rem(130) rem(30);
+  @include media-mx(767) {
+    margin: rem(15) rem(15);
+  }
+  h2 {
+    color: var(--primary-hover-color);
+    font-family: "Cormorant Garamond";
+    font-size: clamp(rem(35), 5vw, rem(60));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3; /* 130% */
+    letter-spacing: 0.4px;
+    padding: rem(10) 0;
+  }
+
+  p {
+    color: #d7d7d7;
+    font-family: "Cormorant Garamond";
+    font-size: clamp(rem(35), 3.42vw, rem(40));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 180% */
+    letter-spacing: 0.4px;
+    padding: rem(10) 0;
+  }
+
+  ul {
+    color: var(--primary-hover-color);
+    font-family: "Cormorant Garamond";
+    font-size: clamp(rem(25), 5vw, rem(60));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3; /* 130% */
+    letter-spacing: 0.4px;
+    padding: rem(10) 0;
+  }
+
+  ol,
+  li {
+    color: #d7d7d7;
+    font-family: "Cormorant Garamond";
+    font-size: clamp(rem(25), 3.42vw, rem(40));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 180% */
+    letter-spacing: 0.4px;
+    padding: rem(10) 0;
+  }
+}
+
+.nazk_btn {
+  margin: rem(30) auto;
+  display: block;
+  width: auto;
+  padding: rem(20);
+
+  border: 1px solid #d1b06b;
+  background: #1f2732;
+  color: #d7d7d7;
+  font-family: "Cormorant Garamond";
+  font-size: rem(35);
+}
+
+.pop__block-logo {
+  // margin: rem(30) auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: rem(30) auto;
+  height: 100px;
+}
+
+.pop__logo {
+  width: clamp(rem(75), 5.42vw, rem(120));
+
+  display: block;
+}

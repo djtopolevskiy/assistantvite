@@ -1,0 +1,29 @@
+
+header.header
+  .header__container
+    nav.header-nav
+      a.header__logo(href='/imdex.html')
+        img(src="/img/Logo.png" alt='logo')
+        span Assistant
+      nav.header__menu
+        ul.menu__list
+          li.menu__item
+            a.menu__link(href='/pages/question.html') Консультації
+          li.menu__item
+            a.menu__link(data-goto='.laws' href='#!') НПА
+          li.menu__item
+            a.menu__link(href='#!' data-goto='.laws') Джерела
+            span.menu__arrow
+            ul.menu-sub__list.menu-sub__list-pc
+              li.menu-sub__item
+                a.menu-sub__link(href='https://nazk.gov.ua/uk/', target='_blanc') НАЗК
+              li.menu-sub__item
+                a.menu-sub__link(href='https://www.rada.gov.ua/', target='_blanc') Верховна Рада
+              li.menu-sub__item
+                a.menu-sub__link(href='https://www.treasury.gov.ua/', target='_blanc') ДКСУ
+              li.menu-sub__item
+                a.menu-sub__link(href='https://www.youtube.com/channel/UCKwoUDbscWm4BT7BoBo0kMg', target='_blanc') YouTube
+          li.menu__item
+            a.menu__link(data-goto='.laws', href='#!') YouTube
+      include ./iconMenu.pug
+

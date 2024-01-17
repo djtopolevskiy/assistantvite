@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<template data-type="pug" data-src="./../src/include/head.pug"></template>
+	<title>Relax</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<body>
+		<div class="wrapper">
+			<template data-type="pug" data-src="./../src/include/header.pug"></template>
+			<div class="page page-question">
+				<!-- <div class="question__container"> -->
+				<template data-type="pug" data-src="./swiperQ.pug"></template>
+				<template data-type="pug" data-src="./swiperQB.pug"></template>
+			</div>
+			<template data-type="pug" data-src="./../src/include/footer.pug"></template>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script type="module" src="./../src/js/app.js"></script>
+	</body>
+</html>

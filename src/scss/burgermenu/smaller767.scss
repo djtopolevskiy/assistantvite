@@ -1,0 +1,106 @@
+@include media-mx(767) {
+  .header {
+    position: fixed;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    height: $headerHeight + 20 + px;
+
+    .header__menu::before {
+      content: "";
+      position: fixed;
+      align-items: center;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: $headerHeight + 20 + px;
+      background-color: #161d27;
+      border-bottom: rem(2) solid var(--primary-hover-color);
+      z-index: 2;
+    }
+
+    .header__menu._active {
+      left: 0;
+      justify-content: flex-start;
+    }
+
+    .header__menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: rem(100) rem(30) rem(30) rem(30);
+      overflow: auto;
+      z-index: 0;
+      align-items: self-start;
+      font-size: 25px;
+      .menu__list > li {
+        flex-wrap: wrap;
+        margin: rem(0) rem(0) rem(20) rem(0);
+        // font-size: rem(24);
+        font-weight: normal;
+      }
+      .menu__list > li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  // =============
+  body._touch .menu__list > li .menu-sub__list {
+    display: none;
+  }
+
+  body._touch .menu__list > li._active .menu-sub__list {
+    display: block;
+    position: relative;
+
+    opacity: 1;
+    visibility: visible;
+    transform: translate(rem(0), rem(0));
+    pointer-events: all;
+    transition: all 0.3s ease 0s;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: rem(5);
+    margin-top: rem(20);
+    margin-left: rem(20);
+    flex: 1 1 100%;
+
+    .menu-sub__item {
+      margin: rem(0) rem(0) rem(20) rem(0);
+    }
+    .menu-sub__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  body._pc .menu__list > li .menu-sub__list-pc {
+    display: none;
+  }
+
+  body._pc .menu__list > li:hover .menu-sub__list-pc {
+    display: block;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(rem(0), rem(0));
+    pointer-events: all;
+    transition: all 0.3s ease 0s;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: rem(5);
+    margin-top: rem(20);
+    margin-left: rem(20);
+    flex: 1 1 100%;
+
+    .menu-sub__item {
+      margin: rem(0) rem(0) rem(20) rem(0);
+    }
+    .menu-sub__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
