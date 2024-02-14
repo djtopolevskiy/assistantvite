@@ -1,0 +1,1 @@
+import{B as e,P as a,A as s,a as o}from"./spoilers-GEhGO48o.js";e.checkWebpSupport();e.addTouchClass();e.headerFixed();new a;new s(".accordion",{shouldOpenAll:!1,defaultOpen:[],collapsedClass:"open"});new o().init();
