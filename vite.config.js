@@ -10,6 +10,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
 	plugins: [vitePugPlugin()],
+
 	build: {
 		rollupOptions: {
 			input: {

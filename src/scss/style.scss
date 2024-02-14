@@ -1,10 +1,12 @@
 @use "sass:math";
 
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import "normalize.css";
+// @import "input.scss";
+
+// @import "normalize.css";
 
 /**
 * Подключение шрифтов локально из папки "./src/fonts"
@@ -22,7 +24,8 @@
 @import "config/patternSelectors";
 
 /** Обнуление */
-@import "config/reset";
+// @import "config/reset";
+// @import "config/output";
 
 /**
 * Библиотеки
